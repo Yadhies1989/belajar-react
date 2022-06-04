@@ -20,10 +20,14 @@ const dataBelanjaan = [
   ];
 
   const listBelanja = (param1) => {
+    let hasil =[];
     for (let counter = 0; counter < param1.length; counter++) {
-    console.log(param1[counter]);
+    hasil.push(param1[counter].nama + " " + param1[counter].harga);
+    // console.log(param1[counter]);
     }
+    return hasil;
   };
 
   listBelanja(dataBelanjaan);
 
+  console.log(listBelanja);
